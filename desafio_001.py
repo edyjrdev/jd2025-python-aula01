@@ -8,6 +8,10 @@ Finalmente, o programa deve imprimir uma mensagem no seguinte formato: "Olá [no
 Exemplo de Saída:
 Se o usuário digitar "Luciano" como nome, "5000" como salário e "1.5" como bônus, o programa deve imprimir:
 """
+
+# CONSTANTE
+BONUS_GERAL = 1000
+
 # Entradas
 nome = input('Digite seu nome: ')
 salario_str = input('Informe o valor do seu salário: ')
@@ -16,7 +20,7 @@ bonus_str = input('Informe o valor percentual do seu bônus:')
 # processamento 
 salario = float(salario_str)
 bonus = float(bonus_str)
-kpi = 1000 + (salario * bonus)
+kpi = BONUS_GERAL + (salario * bonus)
 
 # saida
 print(f'Olá {nome}, o seu valor bônus foi de {kpi}')
